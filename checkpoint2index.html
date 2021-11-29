@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Cadastro SP</title>
+</head>
+<body>
+
+  <h1>Cadastro São Paulo</h1>
+
+  <form action="/cadastrar" name="cadastro-usuario">
+    <fieldset form="cadastro-usuario"> <!--um conjunto/grupo de campos-->
+      <legend>Dados Pessoais</legend>
+
+      <div>
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" id="nome" placeholder="Insira o nome">
+      </div>
+
+      <div>
+        <label for="data">Data de nascimento:</label> <!--formato AAAA-MM-DD -->
+        <input type="date" name="data" id="data" min="1980-01-01" value="1990-12-31">
+      </div>
+      
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Insira o email"> 
+      </div>
+
+      <div>
+        <label for="idade">Idade:</label>
+        <input type="number" name="idade" id="idade" placeholder="Insira a idade"> 
+      </div>
+
+      <div>
+        <label for="redes">Rede social:</label>
+        <input type="number" name="redes" id="redes" placeholder="Insira a rede"> 
+      </div>
+
+      <div>
+        <p>Opcional: </p>
+        <input type="checkbox" name="vocee" id="voctur"> <label for="voctur">Turista</label>
+        <input type="checkbox" name="vocee" id="vocres"> <label for="vocres">Residente</label>
+        <input type="checkbox" name="vocee" id="vocest"> <label for="vocest">Estudante</label>
+      </div>
+
+      <div>
+     
+    </fieldset>
+
+    <fieldset form="cadastro-usuario">
+      <legend>Interesses</legend>
+
+      <div>
+        <label for="curso">Interesses: </label>
+        <select name="interesses" id="interesses">
+          <option value="1">Culturais</option>
+          <option value="2">Eventos</option>
+          <option value="3">Gastronomia</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="minibio">Especifique: </label>
+        <textarea name="especifique" id="especifique" cols="50" rows="5" placeholder="Insira a minibio"></textarea>
+      </div>
+    </fieldset>
+
+    </fieldset>
+
+    <div class="text-center">
+      <input type="checkbox" name="condicoes" id="condicoes"> <label for="condicoes">Li e aceito as condições.</label>
+    </div>
+
+    <div class="text-center">
+      <button type="reset">Limpar</button>
+      <button type="submit">Cadastrar</button>
+    </div>
+
+  </form>
+
+</body>
+</html>
